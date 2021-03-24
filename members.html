@@ -14,17 +14,18 @@
     <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PE6RTB4QB9"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'G-PE6RTB4QB9');
-    </script>
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .tales {
+            width: 100%;
+        }
+        .carousel-inner{
+          width:100%;
+          max-height: 200px !important;
+        }
+      </style>
 
     
   </head>
@@ -56,21 +57,20 @@
       </nav>
     </header>
     <!-- END header -->
-    <section class="home-slider inner-page owl-carousel">
-      <div class="slider-item" style="background-image: url('images/coding.jpeg');">
-        <div class="container">
-          <div class="row slider-text align-items-center justify-content-center">
-            <div class="col-md-8 text-center col-sm-12 element-animate">
-              <p><a href="#" class="btn btn-light px-8 py-4"><span class="h2">Research Group</span></a></p>
+    <section>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="images/coding.jpeg" alt="First slide">
             </div>
+            
           </div>
         </div>
-
-      </div>
     </section>
     <!-- END slider -->
-<section class="section bg-light block-11">
+<section class="section bg-light block-11 mt-2 pt-2">
     <div class="container">
+        <h2 class="mb-5 mt-5">Research Group</h2>
         <div class="card-deck">
           <div class="card">
                   <div class="item">
@@ -170,6 +170,28 @@
                   <div class="item">
                     <div class="block-33">
                         <div class="vcard d-flex mb-3">
+                          <div class="image align-self-center"><img src="images/jilong.jpg" alt="Bian, Jilong"></div>
+                          <div class="name-text align-self-center">
+                            <h2 class="heading">Dr. Bian, Jilong</h2>
+                            <span class="meta">Research Scholar</span>
+                          </div>
+                        </div>
+                        <div class="text">
+                          <blockquote>
+                            <p>Jilong is a visiting scholar from Northeast Forestry University. His research interest is about computer vision , deep learning and bioinformatics.</p>
+                          </blockquote>
+                        </div>
+                      </div>
+                  </div>
+          </div>
+        </div>    
+    </div>
+    <div class="container mt-3">
+        <div class="card-deck">
+          <div class="card">
+                  <div class="item">
+                    <div class="block-33">
+                        <div class="vcard d-flex mb-3">
                           <div class="image align-self-center"><img src="images/yucheng.jpg" alt="Zhang, Yucheng"></div>
                           <div class="name-text align-self-center">
                             <h2 class="heading">Dr. Zhang, Yucheng</h2>
@@ -188,30 +210,7 @@
     </div>
 </section>
 <!-- END .block-4 -->
-     <div class="container mt-3">
-        <h2 class=""><b>Group Alumni</b>
-        <div class="card-deck">
-          <div class="card">
-                  <div class="item">
-                    <div class="block-33">
-                        <div class="vcard d-flex mb-3">
-                          <div class="image align-self-center"><img src="images/jilong.jpg" alt="Bian, Jilong"></div>
-                          <div class="name-text align-self-center">
-                            <h2 class="heading">Dr. Bian, Jilong</h2>
-                        <div class="text">
-                          <blockquote>
-                            <p>Research scholar (2019-2020). Now Northeast Forestry University in China. </p>
-                          </blockquote>
-                        </div>
-                          </div>
-                        </div>
-                      </div>
-                  </div>
-          </div>
-        </div>    
-    </div>
 
-    
     <footer class="site-footer" role="contentinfo">
       <div class="container">
         <div class="row mb-5">
@@ -223,6 +222,7 @@
                 <span class="text-white">HS 5013, 410 W 10th street, Indianapolis IN 46202</span></li>
               <li class="d-block"><span class="d-block">Telephone:</span><span class="text-white">+1(317)278-6445</span></li>
               <li class="d-block"><span class="d-block">Email:</span><span class="text-white">junwan [at] iu [dot] edu</span></li>
+              <li class="d-block"><span class="d-block">Keywords:</span><span class="text-white">Wan bioinformatics, Wan Lab, Wan's Lab</span></li>
             </ul>
           </div>
           </div>

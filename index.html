@@ -4,9 +4,40 @@
     <title>Jun Wan Bioinformatics</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+    #overlay {
+      position: fixed;
+      display: none;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.7);
+      z-index: 600;
+      cursor: pointer;
+    }
 
+    #text{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 50px;
+      color: white;
+      transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+    }
+    .tales {
+        width: 100%;
+    }
+    .carousel-inner{
+      width:100%;
+      max-height: 200px !important;
+    }
+    </style>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
-
+    <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
 
@@ -14,20 +45,24 @@
     <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PE6RTB4QB9"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'G-PE6RTB4QB9');
-    </script>
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
 
   </head>
   <body>
+<!--
+    <div style="position:fixed;z-index:500;bottom:50px;right:20px;">
+        <img src="images/now-hiring-sign.png" width="160" onclick="on()">
+      </div>
+    <div id="overlay" onclick="off()">
+      <div id="text">
+          <h2 class="text-white">We are hiring</h2>
+          <h3 class="text-white">Details.....</h3>
+          <h4 class="text-white">xxx@iu.edu</h4>
+        </div>
+    </div>-->
+
     <header role="banner">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
@@ -56,9 +91,14 @@
     </header>
     <!-- END header -->
     
-    <section class="home-slider inner-page owl-carousel">
-      <div class="slider-item" style="background-image: url('images/main_bg.png');">
-      </div>
+    <section>
+        <div id="carouselExampleSlidesOnly" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="images/main_bg.png" alt="First slide">
+            </div>
+          </div>
+        </div>
     </section>
      <section class="retina-ready big_padding mt-5 pt-5">
          <div class="container">
@@ -71,7 +111,8 @@
                <div class="col-md-7 col-sm-6">
                   <div class="retina-text">
                      <h3 class="default_section_heading margin_bottom_25 wow fadeInRight" data-wow-delay="500ms">Welcome to Wan Lab</h3>
-                     <p class="wow fadeInRight" data-wow-delay="300ms">Bioinformatics and Computational Systems Biology</p>
+                     <h4><p class="wow fadeInRight font-weight-bold" data-wow-delay="300ms">Bioinformatics and Computational Systems Biology</p></h4>
+                     <i class="bi bi-star"></i><p class="font-italic"><ins>Self-motivated students are always welcome to join us, regardless of their backgrounds. We might have postdoctoral training opportunities for recently graduated PhD students or potential staff positions for junior/experienced bioinformaticians. Please email your complete CV to Dr. Jun Wan <ins>junwan@iu.edu</ins> for the inquiry.</ins></p>
                      <p class="wow fadeInRight" data-wow-delay="700ms">Current research interests in Dr. Jun Wan's lab cover broad topics of bioinformatics and computational systems biology, particularly focused on (1) deciphering genetic and epigenetic codes, (2) exploring master regulators for gene programming, (3) understanding dynamics of gene regulatory networks, (4) investigating interactions between small molecules and proteins/DNA/RNA, and (5) using machine learning to predict gene regulation and model binding activities of small molecules. The lab conducts studies in gene regulatory mechanisms from multiple dimensions, including transcription factor regulation, DNA methylation, alternative splicing, microRNA regulation, whole-genome nucleosome organization, histone modifications, and chromatin organizations. We also work on public domain data to integrate a wide variety of ‘-omics’ data sets to achieve comprehensive patterns of gene regulatory networks. 
                       </p>
                   </div>
@@ -85,7 +126,7 @@
         <div class="row justify-content-center mb-3 mt-5 element-animate">
           <div class="col-md-8 text-center">
             <h2 class="heading mb-3">Coronavirus Sequence Analysis</h2>
-            <p class="wow fadeInRight" data-wow-delay="700ms">As a global emergency, COVID-19 outbreak has resulted about 33 million confirmed cases including about one million deaths all over the world as of Sept 27th, 2020 (from JHU Coronavirus Resource Center). GISAID has collected 134,557 hCoV-19 viral genome sequences. In order to uncover the viral mutations, we establish this web-tool, GESS, based on the analysis of single nucleotide variants (SNVs) from high-coverage and high-quality hCoV-19 viral genomes downloaded from GISAID.</p>
+            <p class="wow fadeInRight" data-wow-delay="700ms">As a global emergency, COVID-19 outbreak has resulted about 120 million confirmed cases including about one million deaths all over the world as of Mar 16th, 2021 (from JHU Coronavirus Resource Center). GISAID has collected 860,940 hCoV-19 viral genome sequences. In order to uncover the viral mutations, we establish this web-tool, GESS, based on the analysis of single nucleotide variants (SNVs) from high-coverage and high-quality hCoV-19 viral genomes downloaded from GISAID.</p>
             <p><a href="https://wan-bioinfo.shinyapps.io/GESS/" class="btn btn-outline-secondary px-5 py-4">Go to our GESS APP</a></p>
 
           </div>
@@ -97,7 +138,7 @@
       </div>
     </section>  
     <!-- END section -->
-
+    
     <footer class="site-footer" role="contentinfo">
       <div class="container">
         <div class="row mb-5">
@@ -109,7 +150,7 @@
                 <span class="text-white">HS 5013, 410 W 10th street, Indianapolis IN 46202</span></li>
               <li class="d-block"><span class="d-block">Telephone:</span><span class="text-white">+1(317)278-6445</span></li>
               <li class="d-block"><span class="d-block">Email:</span><span class="text-white">junwan [at] iu [dot] edu</span></li>
-              <li class="d-block"><span class="d-block">Keywords:</span><span class="text-white">Jun Wan, Bioinformatics, Computational Biology, Systems Biology, <a href="https://wanbioinfo.github.io/GESS/index.html">GESS</a></span></li>
+              <li class="d-block"><span class="d-block">Keywords:</span><span class="text-white">Wan bioinformatics, Wan Lab, Wan's Lab, <a href="https://wanbioinfo.github.io/GESS/index.html">GESS</a></span></li>
             </ul>
           </div>
           </div>
@@ -135,6 +176,16 @@
     <!-- loader -->
     <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214"/></svg></div>
 
+    
+    <script type="text/javascript">
+        function on() {
+          document.getElementById("overlay").style.display = "block";
+        }
+
+        function off() {
+          document.getElementById("overlay").style.display = "none";
+        }
+    </script>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

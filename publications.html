@@ -14,18 +14,19 @@
     <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PE6RTB4QB9"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-PE6RTB4QB9');
-    </script>
+
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/955d915218.js" crossorigin="anonymous"></script>
+    <style>
+        .tales {
+            width: 100%;
+        }
+        .carousel-inner{
+          width:100%;
+          max-height: 200px !important;
+        }
+      </style>
 
   </head>
   <body> 
@@ -39,16 +40,16 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarsExample05">
             <ul class="navbar-nav pl-md-5">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link text-dark" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="members.html">People</a>
+                <a class="nav-link text-dark" href="members.html">People</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="publications.html">Publications</a>
+                <a class="nav-link active text-dark" href="publications.html">Publications</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="news.html">News</a>
+                  <a class="nav-link text-dark" href="news.html">News</a>
                 </li>
             </ul>
           </div>
@@ -56,24 +57,20 @@
       </nav>
     </header>
     <!-- END header -->
-    <section class="home-slider inner-page owl-carousel">
-      <div class="slider-item" style="background-image: url('images/papers.jpg');">
-        
-        <div class="container">
-          <div class="row slider-text align-items-center justify-content-center">
-            <div class="col-md-8 text-center col-sm-12 element-animate">
-              <h1>Our Publications</h1>
+    <section>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="images/papers.jpg" alt="First slide">
             </div>
           </div>
         </div>
-
-      </div>
     </section>
     <!-- END slider -->
   
  
   
-    <section class="section border-t pb-0">
+    <section class="section border-t pb-0 mt-0 pt-0">
           <!-- Page Content -->
   <div class="container">
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center text-secondary" id="publications">
@@ -93,21 +90,13 @@
             </li>
           <li class="mb-3">
             <i class="fa-li fas fa-scroll text-warning"></i>
-	     S Liu, JK Shen, S Fang, K Li, J Liu, L Yang, CD Hu, <b>J Wan</b> (2020) Genetic spectrum and distinct evolution patterns of SARS-CoV-2. <i><b>Frontiers in Microbiology</b></i> (Accepted for publication).
+		  S Liu, JK Shen, S Fang, K Li, J Liu, L Yang, CD Hu, <b>J Wan</b> (2020) Genetic spectrum and distinct evolution patterns of SARS-CoV-2. <i><b>Frontiers in Microbiology</b></i> (Accepted for publication).
             </li>
           <li class="mb-3">
             <i class="fa-li fas fa-scroll text-warning"></i>
              J Liu, S Liu, H Gao, L Han, X Chu, Y Sheng, W Shou, Y Wang, Y Liu, <b>J Wan*</b>, L Yang* (2020) Genome-wide studies reveal the essential and opposite roles of ARID1A in controlling human cardiogenesis and neurogenesis from pluripotent stem cells. <i><b>Genome Biology</b></i> (in press). (PMID: 32646524)
             </li>
           <li class="mb-3">
-            <i class="fa-li fas fa-scroll text-warning"></i>
-	     N Lin, J Liu, J Castle, <b>J Wan</b>, A Shendre, Y Liu, C Wang, C He (2020) Genome-wide DNA methylation profiling in human breast tissue by illumina TruSeq methyl capture EPIC sequencing and infinium methylationEPIC beadchip microarray. <i><b>Epigenetics</b></i> (in press) 
-            </li>
-          <li class="mb-3">
-            <i class="fa-li fas fa-scroll text-warning"></i>
-	     R Choudhury, J Beezley, B Davis, J Tomeck, S Gratzl, L Golzarri-Arroyo, <b>J Wan</b>, D Raftery, J Baumes, TM O’Connell (2020) Viime: Visualization and Integration of Metabolomics Experiments. <i><b>The Journal of Open Source Software</b></i> (in press).
-            </li>
-	  <li class="mb-3">
             <i class="fa-li fas fa-scroll text-warning"></i>
 	      S Dey, S Liu, TD Factora, S Taleb, P Riverahernandez, L Udari, X Zhong, <b>J Wan</b>, J Kota (2020) Global targetome analysis reveals critical role of miR-29a in pancreatic stellate cell mediated regulation of PDAC tumor microenvironment. <i><b>BMC Cancer</b></i> (in press).
             </li>
@@ -315,6 +304,7 @@
                 <span class="text-white">HS 5013, 410 W 10th street, Indianapolis IN 46202</span></li>
               <li class="d-block"><span class="d-block">Telephone:</span><span class="text-white">+1(317)278-6445</span></li>
               <li class="d-block"><span class="d-block">Email:</span><span class="text-white">junwan [at] iu [dot] edu</span></li>
+              <li class="d-block"><span class="d-block">Keywords:</span><span class="text-white">Wan bioinformatics, Wan Lab, Wan's Lab</span></li>
             </ul>
           </div>
           </div>
