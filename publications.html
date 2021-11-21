@@ -26,7 +26,28 @@
           width:100%;
           max-height: 250px !important;
         }
+        
+        ul li span{
+            cursor: pointer;
+        }
+        .hovering ul li img{
+            visibility: hidden;
+            position: absolute;
+            left: 250px;
+            bottom: 100%;
+            z-index: 100;
+            transition: all 0.1s ease;
+            transform: scale(0);
+        }
+        .hovering ul li:hover img{
+            visibility: visible;
+            transform: scale(1);
+        }
+        .hovering ul li:hover span{
+            opacity: 0.5;
+        }
       </style>
+
 
   </head>
   <body> 
@@ -72,7 +93,7 @@
   
     <section class="section border-t pb-0 mt-0 pt-0">
           <!-- Page Content -->
-  <div class="container">
+  <div class="container hovering">
     <section class="resume-section p-2 p-lg-5 d-flex align-items-center text-secondary" id="publications">
       <div class="w-100">
         <h2 class="">Selected Publications (<i>Full list seen <a href="https://scholar.google.com/citations?user=4pP5A50AAAAJ&hl=en">Here</a></i>) </h2>
@@ -92,10 +113,12 @@
            <i class="fa-li fas fa-scroll text-warning"></i>
 		Q Liu, <b>J Wan*</b>, G Wang* (2021) A survey on computational methods in discovering protein inhibitors of SARS-CoV-2. <i><b>Briefings in Bioinformatics</b></i> (in press)
 	</li>
-          <li class="mb-3">
+        <li class="mb-3">
            <i class="fa-li fas fa-scroll text-warning"></i>
-	      S Fang, S Liu, J Shen, AZ Lu, AKY Wang, Y Zhang, K Li, J Liu, L Yang, CD Hu, <b>J Wan</b> (2021) Updated SARS-CoV-2 Single Nucleotide Variants and Mortality Association. <i><b>Journal of Medical Virology</i></b> (<u>selected as cover feature story</u>) (in press). 
-            </li>
+            <span>
+                S Fang, S Liu, J Shen, AZ Lu, AKY Wang, Y Zhang, K Li, J Liu, L Yang, CD Hu, <b>J Wan</b> (2021) Updated SARS-CoV-2 Single Nucleotide Variants and Mortality Association. <i><b>Journal of Medical Virology</b></i> &nbsp;(<u>selected as cover feature story</u>) (in press). 
+            </span><center><img src="images/jmv-cover.jpg" alt="jmv-cover-image"></center>
+        </li>
           <li class="mb-3">
             <i class="fa-li fas fa-scroll text-warning"></i>
 	    Z Zhou, K Van der Jeught, Y Fang, T Yu, Y Li, Z Ao, S Liu, L Zhang, Y Yang, H Eyvani, M Cox, X Wang, X He, G Ji, B Schneider, F Guo, <b>J Wan</b>, X Zhang, X Lu (2021) Targeted breast cancer immunotherapy with epigenetic modulation of antigen presentation on tumor cells. <i><b>Nature Biomedical Engineering</b></i> (Accepted for publication). 
